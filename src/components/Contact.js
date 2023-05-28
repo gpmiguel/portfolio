@@ -2,7 +2,7 @@ import React, { useRef } from 'react'
 import emailjs from '@emailjs/browser';
 import PopupModal from './PopupModal';
 
-import CONSTANTS from '../../properties/portfolio'
+import portfolio from '../properties/portfolio';
 
 const Contact = () => {
     const [name, setName] = React.useState("");
@@ -22,7 +22,7 @@ const Contact = () => {
     function handleSubmit(e) {
       e.preventDefault();
 
-      emailjs.sendForm(CONSTANTS.SERVICE_ID, CONSTANTS.TEMPLATE_ID, form.current, CONSTANTS.PUBLIC_KEY)
+      emailjs.sendForm(portfolio.SERVICE_ID, portfolio.TEMPLATE_ID, form.current, portfolio.PUBLIC_KEY)
         .then((result) => {
             console.log(result.text);
         }, (error) => {
@@ -79,7 +79,7 @@ const Contact = () => {
         <form
           netlify
           name="contact"
-          onSubmit={handleSubmitMock}
+          onSubmit={handleSubmit}
           ref={form}
         //   class="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
           class="flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
