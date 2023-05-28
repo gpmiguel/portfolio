@@ -6,28 +6,28 @@ import { work } from "../data";
 const Work = () => {
   return (
     <section id="work">
-      <div className="container px-5 py-10 mx-auto text-center">
-        <UsersIcon className="w-10 inline-block mb-4" />
-        <h1 className="sm:text-4xl text-3xl font-medium title-font text-white mb-12">
+      <div class="container px-5 py-10 mx-auto text-center">
+        <UsersIcon class="w-10 inline-block mb-4" />
+        <h1 class="sm:text-4xl text-3xl font-medium title-font text-white mb-12">
           Work Experience
         </h1>
-        <div className="flex flex-wrap m-4">
+        <div class="flex flex-wrap m-4">
           {work.map((work) => (
-            <div className="p-4 md:w-1/2 w-full">
-              <div className="h-full bg-gray-800 bg-opacity-40 p-8 rounded">
-                <TerminalIcon className="block w-8 text-gray-500 mb-4" />
-                <p className="leading-relaxed mb-6">{work.quote}</p>
-                <div className="inline-flex items-center">
+            <div class="p-4 md:w-1/2 w-full">
+              <div class="h-full bg-gray-800 bg-opacity-40 p-8 rounded">
+                <TerminalIcon class="block w-8 text-gray-500 mb-4" />
+                <p class="leading-relaxed mb-6">{work.quote}</p>
+                <div class="inline-flex items-center">
                   <img
                     alt="testimonial"
                     src={work.image}
-                    className="w-12 rounded-full flex-shrink-0 object-cover object-center"
+                    class="w-12 rounded-full flex-shrink-0 object-cover object-center"
                   />
-                  <span className="flex-grow flex flex-col pl-4">
-                    <span className="title-font font-medium text-white">
+                  <span class="flex-grow flex flex-col pl-4">
+                    <span class="title-font font-medium text-white">
                       {work.name}
                     </span>
-                    <span className="text-gray-500 text-sm uppercase">
+                    <span class="text-gray-500 text-sm uppercase">
                       {work.company}
                     </span>
                   </span>
