@@ -8,9 +8,9 @@ import Work from "./components/Work";
 
 export default function App() {
   return(
-    <main className="text-gray-400 bg-gray-900 body-font">
-      <Nav className="px-0"/>
-      <div className="px-10">
+    <main class="text-gray-400 bg-gray-900 body-font">
+      <Nav class="px-0"/>
+      <div class="px-10">
         <About />
         <Work />
         <Projects />
